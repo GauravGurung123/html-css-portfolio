@@ -61,7 +61,6 @@ nav{
 .about-img-box{
     max-width: 40rem;
     height: 100% !important;
-    overflow: hidden;
     /* Magic */
     display: flex;
     align-items: center; /* vertical */
@@ -76,6 +75,8 @@ nav{
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 .primary-description{
     font-size: 1.2rem;
@@ -110,4 +111,56 @@ nav{
 }
 .mr-right-sm{
     margin-right: 4px !important;
+}
+.mb-sm{
+    margin-bottom: 2rem!important;
+}
+.mb-md{
+    margin-bottom: 4rem!important;
+}
+.section-skill{
+    background: #ee8e39;
+    padding: 8rem;
+}
+.skill{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 82rem;
+    margin: 0 auto;
+    gap: 1rem;
+    align-items: center;
+}
+.card{
+    background-color: #f5e6e3;
+    display: inline-block;
+    width: 100%;
+    padding: 1rem;
+    /* box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.507); */
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    position: relative;
+}
+.card:hover {
+    transform: translateY(-0.4rem);
+  }
+.card-title{
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.card-description{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 3rem;    
+    text-align: justify;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    margin: 2rem;
 }
